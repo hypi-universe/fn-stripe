@@ -1,0 +1,11 @@
+{
+  "name": "stripe",
+  "version": "0.1.0",
+  "scripts": {
+    "build": "docker build . -t hcr.hypi.app/stripe:$VERSION",
+    "deploy": "docker push hcr.hypi.app/stripe:$VERSION"
+  },
+  "dependencies": {
+    "stripe": "^14.15.0"
+  }
+}
